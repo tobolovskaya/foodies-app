@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  width: 100%;
+  padding: 120px 0 0 0;
+}
+
+.image {
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 704px;
+    width: 100%;
+  }
+
+  .image {
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .image {
+    width: 520px;
+  }
+}

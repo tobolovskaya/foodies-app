@@ -1,0 +1,17 @@
+.pageWrapper {
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .pageWrapper {
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pageWrapper {
+    max-width: 1280px;
+  }
+}
