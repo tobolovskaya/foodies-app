@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 30px;
+  font-family: var(--base-font);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
