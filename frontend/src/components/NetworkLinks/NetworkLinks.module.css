@@ -1,0 +1,56 @@
+.socialList {
+  max-width: 140px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px;
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+}
+.socialLink svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--black);
+}
+
+.socialLink:hover,
+.socialLink:focus {
+  background-color: var(--dark-gray);
+  border-color: var(--white);
+  transform: scale(1.05);
+}
+
+.socialLink:hover svg,
+.socialLink:focus svg {
+  fill: var(--white);
+}
+
+.socialLink svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--black);
+}
+
+@media (min-width: 768px) {
+  .socialList {
+    gap: 16px;
+  }
+  .socialLink {
+    padding: 9px;
+  }
+}
+@media (min-width: 1440px) {
+  .socialList {
+    gap: 9px;
+  }
+}
