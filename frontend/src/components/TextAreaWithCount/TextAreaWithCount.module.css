@@ -1,0 +1,104 @@
+.formGroup {
+  width: 100%;
+}
+
+.label {
+  color: var(--black);
+  font-size: 16px;
+  display: block;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 343px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.textarea {
+  width: 100%;
+  max-width: 270px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43; 
+  letter-spacing: -0.28px;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--gray);
+  min-height: 36px; 
+  overflow: hidden;
+  transition: height 0.2s ease;
+  position: relative;
+}
+
+.textarea::placeholder {
+  color: var(--gray);
+}
+
+.charCount {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+}
+
+.emptyCount {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+}
+
+.currentCount {
+  color: var(--black);
+}
+
+.maxCount {
+  color: var(--gray);
+}
+
+.errorMessage {
+  color: var(--red);
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .inputWrapper {
+    max-width: 649px;
+  }
+  .label {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 40px;
+  }
+  .textarea {
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+    color: var(--black);
+  }
+  .charCount {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+  }
+  .emptyCount {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+  }
+}

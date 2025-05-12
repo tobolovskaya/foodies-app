@@ -1,0 +1,71 @@
+.darkTheme {
+  --bg-color: var(--black);
+  --text-color: var(--white);
+}
+
+.lightTheme {
+  --bg-color: var(--white);
+  --text-color: var(--black);
+}
+
+.headerContainer {
+  width: 100%;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 8px 8px 0 8px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .headerContainer {
+    max-width: 768px;
+    padding: 16px 16px 0 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headerContainer {
+    max-width: 1440px;
+    padding: 20px 20px 0 20px;
+  }
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 16px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .headerWrapper {
+    padding: 20px 32px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headerWrapper {
+    padding: 20px 60px;
+  }
+}
+
+.logoLight {
+  fill: var(--black);
+}
+
+.logoDark {
+  fill: var(--white);
+}
+
+.userControls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

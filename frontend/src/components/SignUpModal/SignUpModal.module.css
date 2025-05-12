@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 343px;
+}
+
+.title {
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.switchText {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  color: var(--dark-gray);
+  padding-top: 16px;
+  text-align: center;
+}
+
+.switchButton {
+  background: none;
+  border: none;
+  color: var(--black);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 401px;
+  }
+
+  .title {
+    color: var(--black);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+  }
+
+  .switchText {
+    font-size: 16px;
+  }
+}

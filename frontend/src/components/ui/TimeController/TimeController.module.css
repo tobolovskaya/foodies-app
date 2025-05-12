@@ -1,0 +1,134 @@
+.timeControllerWrapper{
+  margin: 20px 0;
+  position: relative;
+}
+
+.label {
+  color: var(--black);
+  font-size: 16px;
+  display: block;
+  font-weight: 800;
+  letter-spacing: -0.32px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.timeController {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+}
+
+.timeButton {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.timeButton svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--black);
+}
+
+.timeButton:hover {
+  transition: stroke 0.5s ease;
+  background-color: var(--black);
+}
+
+.timeButton:hover svg {
+  stroke: var(--white);
+}
+
+.timeValue {
+  width: 49px;
+  margin: 0 12px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+  color: var(--gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.valueChanged {
+  color: var(--black);
+}
+
+.dropdown {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: var(--white);
+  border: 1px solid var(--gray);
+  list-style: none;
+  padding: 16px 18px;
+  border-radius: 15px;
+  z-index: 10;
+  width: 343px;
+}
+
+.dropdownItem {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .timeControllerWrapper{
+    margin: 0;
+  }
+  .label {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+  .timeButton {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .timeButton svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .timeValue {
+    margin: 0 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+  }
+  .dropdown{
+    top: 56px;
+    width: 315px;
+  }
+  .dropdownItem {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+    padding: 6px 0;
+  }
+}

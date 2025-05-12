@@ -1,0 +1,42 @@
+.wrapper {
+  margin: 64px 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+}
+
+.link {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease
+}
+
+.link:hover {
+  color: var(--dark-gray);
+}
+
+.slash {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 8px;
+}
+
+.wrap {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
