@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AM1007/foodies_app.git"
+    "url": "git+https://github.com/tobolovskaya/foodies_app.git"
   },
   "author": "Frontend Lovers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AM1007/foodies_app/issues"
+    "url": "https://github.com/tobolovskaya/foodies_app/issues"
   },
-  "homepage": "https://github.com/AM1007/foodies_app#readme",
+  "homepage": "https://github.com/tobolovskaya/foodies_app#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "chalk": "^5.4.1",
