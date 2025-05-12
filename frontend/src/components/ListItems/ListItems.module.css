@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 24px;
+  justify-content: flex-start;
+}
+
+.empty {
+  margin: 40px auto 0;
+  width: 610px;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--dark-gray);
+  text-align: center;
+  font-size: var(--base-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
+
+  white-space: normal;
+  padding: 0 10px;
+}
+
+.list[data-tab='followers'] > div:not(:last-child),
+.list[data-tab='following'] > div:not(:last-child) {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list {
+    margin-left: 40px;
+  }
+}
