@@ -1,0 +1,108 @@
+   ├── .env.example
+    ├── .gitignore
+    ├── API_DOCUMENTATION.md
+    ├── DATABASE.md
+    ├── README.md
+    ├── app.js
+    ├── backend.txt
+    ├── constants
+    │   ├── auth.js
+    │   └── httpStatus.js
+    ├── controllers
+    │   ├── areasControllers.js
+    │   ├── authControllers.js
+    │   ├── categoriesControllers.js
+    │   ├── ingredientsControllers.js
+    │   ├── recipesControllers.js
+    │   ├── testimonialControllers.js
+    │   └── usersControllers.js
+    ├── db
+    │   ├── associations.js
+    │   ├── models
+    │   │   ├── Area.js
+    │   │   ├── Category.js
+    │   │   ├── Favorite.js
+    │   │   ├── Follower.js
+    │   │   ├── Ingredient.js
+    │   │   ├── Recipe.js
+    │   │   ├── RecipeIngredient.js
+    │   │   ├── Testimonial.js
+    │   │   └── User.js
+    │   └── sequelize.js
+    ├── decorators
+    │   ├── ctrlWrapper.js
+    │   ├── validateBody.js
+    │   └── validateQuery.js
+    ├── helpers
+    │   ├── HttpError.js
+    │   ├── jwt.js
+    │   └── paginationHelper.js
+    ├── middlewares
+    │   ├── authenticate.js
+    │   ├── errorHandler.js
+    │   ├── notFoundHandler.js
+    │   ├── upload.js
+    │   └── validateNumericId.js
+    ├── mockData
+    │   ├── areas.json
+    │   ├── categories.json
+    │   ├── ingredients.json
+    │   ├── recipes.json
+    │   ├── testimonials.json
+    │   └── users.json
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── avatars
+    │   │   └── .gitkeep
+    │   └── recipeImages
+    │   │   └── .gitkeep
+    ├── routes
+    │   ├── areasRouter.js
+    │   ├── authRouter.js
+    │   ├── categoriesRouter.js
+    │   ├── ingredientsRouter.js
+    │   ├── recipesRouter.js
+    │   ├── testimonialRouter.js
+    │   └── usersRouter.js
+    ├── schemas
+    │   ├── authSchemas.js
+    │   └── recipeSchemas.js
+    ├── scripts
+    │   ├── seedAreas.js
+    │   ├── seedCategories.js
+    │   ├── seedIngredients.js
+    │   ├── seedRecipes.js
+    │   ├── seedTestimonials.js
+    │   └── seedUsers.js
+    ├── services
+    │   ├── areasServices.js
+    │   ├── authServices.js
+    │   ├── categoriesServices.js
+    │   ├── cloudinary.js
+    │   ├── ingredientsServices.js
+    │   ├── recipesServices.js
+    │   ├── testimonialServices.js
+    │   └── usersServices.js
+    ├── swagger
+    │   ├── definitions
+    │   │   ├── areas.js
+    │   │   ├── auth.js
+    │   │   ├── categories.js
+    │   │   ├── ingredients.js
+    │   │   ├── recipes.js
+    │   │   ├── testimonials.js
+    │   │   └── users.js
+    │   ├── index.js
+    │   ├── schemas
+    │   │   ├── area.js
+    │   │   ├── category.js
+    │   │   ├── components.js
+    │   │   ├── ingredient.js
+    │   │   ├── recipe.js
+    │   │   ├── testimonial.js
+    │   │   └── user.js
+    │   └── swagger.js
+    ├── tech_task.md
+    └── temp
+    │   └── .gitkeep
