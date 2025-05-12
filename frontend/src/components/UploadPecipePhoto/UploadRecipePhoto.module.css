@@ -1,0 +1,133 @@
+.photoUpload {
+  width: 100%;
+  max-width: 343px;
+  height: 318px;
+  border: 1px dashed var(--gray);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+
+.photoUpload svg {
+  transition: transform 0.5s ease;
+}
+
+.uploadPlaceholder:hover svg{
+  transform: scale(1.3);
+}
+
+.cameraIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.uploadText {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+  text-decoration-line: underline;
+}
+
+.fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.uploadedPhoto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.recipeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uploadAnotherBtn {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-top: 16px;
+  display: block;
+  text-align: center;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.errorMessage {
+  color:var(--red);
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .photoUploadWrap {
+    width: 704px;
+  }
+  .photoUpload {
+    max-width: 704px;
+    height: 400px;
+  }
+  .uploadPlaceholder {
+    gap: 16px;
+  }
+  .cameraIcon {
+    width: 64px;
+    height: 64px;
+  }
+  .uploadText {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+  }
+  .uploadAnotherBtn {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .photoUploadWrap {
+    width: 551px;
+  }
+  .photoUpload {
+    max-width: 551px;
+  }
+}
