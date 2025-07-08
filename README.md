@@ -120,10 +120,6 @@ application:
 
 ![Results](./screens/print_screen_08.png)
 
-#### Modal Team
-
-![Results](./screens/print_screen_09.png)
-
 #### Page 404
 
 ![Results](./screens/print_screen_10.png)
