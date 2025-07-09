@@ -75,6 +75,11 @@ handles:
 - Social connections between users
 - Favorites management
 
+### Environment Variables
+
+The base URL of the API is configured via the `VITE_API_URL` environment
+variable. See `.env.example` for the default value used in development.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
