@@ -115,8 +115,8 @@ application. It allows users to:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/foodies-api.git
-   cd foodies-api
+   git clone https://github.com/yourusername/foodies-app.git
+   cd foodies-app
    ```
 
 2. Install dependencies
