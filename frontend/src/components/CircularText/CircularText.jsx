@@ -80,7 +80,7 @@ const CircularText = ({
   };
 
   const handleHoverEnd = () => {
-    controls.start({
+    controls.start({ 
       rotate: currentRotation + 360,
       scale: 1,
       transition: getTransition(spinDuration, currentRotation),
