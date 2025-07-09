@@ -148,6 +148,10 @@ application. It allows users to:
    CLOUDINARY_CLOUD_NAME=your_cloud_name
    CLOUDINARY_API_KEY=your_api_key
    CLOUDINARY_API_SECRET=your_api_secret
+
+   # CORS
+   # Comma-separated list of allowed frontend origins
+   CLIENT_ORIGINS=http://localhost:5173,http://localhost:3000,https://your-frontend.vercel.app
    ```
 
 4. Set up the database
