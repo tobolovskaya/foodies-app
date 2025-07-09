@@ -11,7 +11,7 @@ const findUser = async query => await User.findOne({ where: query });
 
 const validateUserName = userName => {
   if (!userName) {
-    return { vaild: false, message: 'Username is required' };
+    return { valid: false, message: 'Username is required' };
   }
   if (userName.length < 3 || userName.length > 30) {
     return {
@@ -117,7 +117,10 @@ const refreshUserToken = async refreshToken => {
   const { payload, error } = jwtHelpers.verifyToken(refreshToken);
 
   if (error) {
-    throw HttpError(HTTP_STATUS.FORBIDDEN, 'Invalid if expired refresh token');
+    throw HttpError(
+      HTTP_STATUS.FORBIDDEN,
+      'Invalid or expired refresh token',
+    );
   }
 
   const user = await findUser({ email: payload.email });
