@@ -24,13 +24,17 @@ const app = express();
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
 app.use(morgan(formatsLogger));
 
+const allowedOrigins = process.env.CLIENT_ORIGINS
+  ? process.env.CLIENT_ORIGINS.split(',').map(origin => origin.trim())
+  : [
+      'https://foodies-app-pke3.onrender.com',
+      'http://localhost:3000',
+      'https://foodies-app-ten-iota.vercel.app',
+      'http://localhost:5173',
+    ];
+
 const corsOptions = {
-  origin: [
-    'https://foodies-app-pke3.onrender.com',
-    'http://localhost:3000',
-    'https://foodies-app-ten-iota.vercel.app',
-    'http://localhost:5173',
-  ],
+  origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
