@@ -1,4 +1,4 @@
-import avatar01 from '/image/team/01-andrew.png';
+import avatar01 from '/image/team/yevheniia.png';
 
 
 const teamMembers = [
