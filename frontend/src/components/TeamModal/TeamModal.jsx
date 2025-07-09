@@ -12,7 +12,7 @@ const TeamModal = ({ onClose }) => {
       overlayClassName={styles.overlayScroll}
     >
       <div className={styles.wrapper}>
-        <h2 className={styles.title}>Space Raccoons Team</h2>
+        <h2 className={styles.title}>Team</h2>
         <ul className={styles.list}>
           {teamMembers.map(({ name, role, img, linkedin, github }) => (
             <li key={name} className={styles.item}>
