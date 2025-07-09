@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosAPI = axios.create({
-  baseURL: 'https://foodies-app-pke3.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',
 });
 
 const privateEndpoints = [
@@ -50,7 +50,7 @@ axiosAPI.interceptors.response.use(
 
       try {
         const response = await axios.post(
-          'https://foodies-app-pke3.onrender.com/api/auth/refresh',
+          `${import.meta.env.VITE_API_URL || 'http://localhost:3000/api'}/auth/refresh`,
         );
         const { token } = response.data;
 
