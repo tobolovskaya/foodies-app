@@ -17,7 +17,7 @@ router.post(
 router.post(
   '/login',
   validateBody(authSchemas.signInSchema),
-  authControllers.singInController,
+  authControllers.signInController,
 );
 
 router.post('/refresh', authControllers.refreshTokenController);
