@@ -3,11 +3,11 @@ import avatar01 from '/image/team/01-andrew.png';
 
 const teamMembers = [
   {
-    name: 'Andrew Motko',
+    name: 'Yevheniia Tobolovska',
     role: 'Team Lead',
     img: avatar01,
-    linkedin: 'https://www.linkedin.com/in/motko/',
-    github: 'https://github.com/AM1007',
+    linkedin: 'https://www.linkedin.com/in/yevheniia-tobolovska/',
+    github: 'https://github.com/tobolovskaya',
   },
 ];
 
