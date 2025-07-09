@@ -18,7 +18,7 @@ const signUpController = async (req, res) => {
   });
 };
 
-const singInController = async (req, res) => {
+const signInController = async (req, res) => {
   const { email, password } = req.body;
   const token = await authServices.signInUser({ email, password });
   res.status(HTTP_STATUS.OK).json(token);
@@ -38,7 +38,7 @@ const refreshTokenController = async (req, res) => {
 
 export default {
   signUpController: ctrlWrapper(signUpController),
-  singInController: ctrlWrapper(singInController),
+  signInController: ctrlWrapper(signInController),
   logOutController: ctrlWrapper(logOutController),
   refreshTokenController: ctrlWrapper(refreshTokenController),
 };
