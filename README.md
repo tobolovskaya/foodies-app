@@ -76,6 +76,24 @@ The platform is structured into two separate repositories:
 
 ---
 
+## 🚀 Deployment
+
+### Backend on Render
+
+- The repository includes a `render.yaml` file that configures the API service.
+- Create a new Web Service on [Render](https://render.com) and point it to this repository.
+- Environment variables should follow the examples in `backend/.env.example`.
+- Render will use `npm start` to launch the service in the `backend` directory.
+
+### Frontend on Vercel
+
+- On [Vercel](https://vercel.com), create a new project and select this repo.
+- Set `frontend` as the root directory in the project settings.
+- Build command: `npm run build`
+- Output directory: `dist`
+- Add any environment variables needed by the frontend (e.g., API base URL).
+- Each push to `main` will trigger a new deployment.
+
 ## 🚀 Getting Started
 
 Refer to the specific README files to set up and run each part of the
