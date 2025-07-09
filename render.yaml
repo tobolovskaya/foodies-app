@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: foodies-api
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/status
+    plan: free
